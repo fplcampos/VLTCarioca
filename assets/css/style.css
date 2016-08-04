@@ -1,0 +1,599 @@
+/*  html5doctor.com Reset Stylesheet v1.6.1 Last Updated: 2010-09-17 Author: Richard Clark - http://richclarkdesign.com  Twitter: @rich_clark */  html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,  footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent; }  body { line-height:1; }  article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section {  display:block; }  nav ul { list-style:none; }  blockquote, q { quotes:none; }  blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; }  a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }  /* change colours to suit your needs */ ins { background-color:#ff9; color:#000; text-decoration:none; }  /* change colours to suit your needs */ mark { background-color:#ff9; color:#000;  font-style:italic; font-weight:bold; }  del { text-decoration: line-through; }  abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }  table { border-collapse:collapse; border-spacing:0; }  /* change border colour to suit your needs */ hr { display:block; height:1px; border:0;  border-top:1px solid #cccccc; margin:1em 0; padding:0; }  input, select { vertical-align:middle; }
+@font-face {
+	font-family: 'Myriad Pro Regular';
+	src: url('../fonts/MyriadPro-Regular.eot');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Myriad Pro Regular';
+	src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+		url('../fonts/MyriadPro-Regular.woff') format('woff'),
+		url('../fonts/MyriadPro-Regular.ttf') format('truetype'),
+		url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Myriad Pro Bold';
+	src: url('../fonts/MyriadPro-Bold.eot');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Myriad Pro Bold';
+	src: url('../fonts/MyriadPro-Bold.woff2') format('woff2'),
+		url('../fonts/MyriadPro-Bold.woff') format('woff'),
+		url('../fonts/MyriadPro-Bold.ttf') format('truetype'),
+		url('../fonts/MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/**
+*
+* GERAIS
+*
+*/
+body {font-family: 'Myriad Pro Regular'; font-size:16px; max-width:100%; width:auto;}
+a {text-decoration:none;}
+.left {float:left;}
+.right {float:right;}
+.clear {clear:both;}
+img,
+embed,
+object,
+video {
+	display: block;
+	height:auto;
+    max-width: 100%;
+}
+
+/**
+*
+* NAV
+*
+*/
+.navFloat {
+	display: none;
+	position: fixed;
+	right: 10px;
+	top: 35%;
+	z-index: 10;
+}
+
+.navFloat ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.navFloat li {
+	background-color: #000000;
+	border-radius: 10px;
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	margin-bottom: 5px;
+	text-align: center;
+	width: 20px;
+}
+
+.navFloat li a {
+	border-radius: 10px;
+	display: inline-block;
+	height: 10px;
+	line-height: 10px;
+	text-align: center;
+	text-indent: -9999px;
+	width: 10px;
+}
+
+.navFloat li a.active {
+	background-color: #ffd800;
+
+}
+
+/**
+*
+* CONTAINER
+*
+*/
+.container {margin:0 auto; padding:0 30px; position:relative; width: 1170px;}
+
+/**
+*
+* HEADER
+*
+*/
+header {margin-bottom:30px; overflow:hidden;}
+header .navlogo {display:block; margin-top:26px;}
+
+/**
+*
+* NAV
+*
+*/
+nav {margin:66px 0 0 162px;}
+nav a {color:#1d1d1b; font-size:16px; font-weight:600; text-transform:uppercase;}
+nav li.active {background-color:#ffda00; border-radius:10px;}
+nav li {display:inline-block; margin-right:18px; padding:8px; text-align:center; width:147px; }
+nav li:last-child {margin-right:0}
+
+/**
+*
+* SEGURANÇA
+*
+*/
+.seguranca_condut {background:#ffc306 url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/seguranca_v2.png') no-repeat center top; margin:0 auto; max-width: 1600px; min-height:1725px; overflow:hidden;}
+.condutores {margin-top:290px; width:635px;}
+.seguranca h2,
+.condutores h2 {display:inline-block; font-family:'Myriad Pro Bold'; font-size:4.375em; letter-spacing:-4px; text-transform:uppercase; width:475px;}
+.seguranca h2 {margin:100px 0 35px;}
+.condutores h2 {margin:0 0 72px;}
+.seguranca p,
+.condutores p {font-size:1.125em; line-height:26px; margin-bottom:18px; width:753px}
+.condutores p {width:100%;}
+.condutores p:last-child {margin-bottom:0}
+
+.seguranca ul {font-size:1.125em; line-height:26px; list-style-type:none; margin: 62px 0 0 315px; width:540px;}
+.seguranca ul li {margin-top:27px;}
+.seguranca ul li:first-child {margin-top:0}
+
+.ipad,
+.sm {display: none;}
+
+/**
+*
+* MAPA
+*
+*/
+.mapa {background:#8bc9de url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/mapa.jpg') no-repeat center bottom; min-height:975px; color:#005aa4; overflow:hidden;}
+.mapa h2 {display:inline-block; font-family:'Myriad Pro Bold'; font-size:4em; letter-spacing:-4px; margin:50px 33px 0 0; text-transform:uppercase;}
+.mapa .div {border-left:1px solid #2b9cc3; float:left; height:143px; margin:50px 30px 0 0; width:1px;}
+.mapa p {font-size:1.125em; line-height:26px; margin:50px 0 40px; width:490px;}
+
+/**
+*
+* O VLT
+*
+*/
+.ovlt {background:url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/ovlt.jpg') no-repeat center top; min-height:519px; position:relative;}
+.ovlt h2 {color:#1d1d1b; display:inline-block; font-family:'Myriad Pro Bold'; font-size:5.000em; letter-spacing:-4px; margin:82px 0 0; text-transform:uppercase;}
+.ovlt h3 {color:#535353; display:block; font-family:'Myriad Pro Bold'; font-size:2.500em; letter-spacing:-2px; text-transform:uppercase;}
+.ovlt .vagoes {background:url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/ovlt_vagoes2.png') no-repeat center top; height:486px; position:absolute; right:46px; top:-30px; width:516px;}
+.ovlt p {font-size:1.125em; line-height:26px; margin:50px 0 0; width:526px;}
+
+/**
+*
+* INFOS
+*
+*/
+.infos {display:none; min-height:310px; padding-top:86px;}
+.infos .bloco {display:inline-block; text-align:center; width:100%;}
+.infos .item-1 {background:url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/capacidade.png') no-repeat center 0;}
+.infos .item-2 {background:url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/velocidade.png') no-repeat center 0;}
+.infos .item-3 {background:url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/composicao.png') no-repeat center 0;}
+.infos .item-4 {background:url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/ticket.png') no-repeat center 0;}
+.infos .item-5 {background:url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/tempo.png') no-repeat center 0; width:189px;}
+.infos .item-1,
+.infos .item-2,
+.infos .item-3,
+.infos .item-4,
+.infos .item-5 {float:left; padding-top:100px; width:240px;}
+.infos .bloco p {color:#1765c3; font-size:1.063em; text-transform:uppercase;}
+.infos .bloco small {color:#1765c3; font-size:0.813em;}
+.infos .bloco .dest-1 {color:#ffd800; font-family:'Myriad Pro Bold'; font-size:2.625em; font-weight:600; letter-spacing:-4px; text-transform:none;}
+.infos .bloco span {font-size:2.625em;}
+/*.infos li .dest-2 {color:#ffd800; font-family:'Myriad Pro Bold'; font-size:2.625em; font-weight:600; letter-spacing:-4px; text-transform:none;}*/
+
+/**
+*
+* FALE CONOSCO
+*
+*/
+.faleconosco {background:#555; display: flex; min-height:300px; padding-bottom: 50px; padding-top:110px;}
+.faleconosco .col-2 {width:540px}
+.faleconosco .txt-right {text-align:right;}
+.faleconosco .col-2 h4 {color:#ffffff; font-family:'Myriad Pro Bold'; font-size:4.706em; font-weight:600; margin-right:32px; text-transform:uppercase;}
+.faleconosco .col-2 h5 {color:#ffcc00; font-size:1.125em; margin-bottom:32px}
+.faleconosco .col-2 p.div {margin-bottom:32px}
+.faleconosco .col-2 p {color:#ffffff; line-height:22px;}
+.faleconosco .col-2 strong {color:#ffffff}
+.faleconosco .col-2 a {color:#ffcc00; text-decoration:underline;}
+
+/**
+*
+* FOOTER
+*
+*/
+footer {min-height:163px;}
+footer .col-8 {width:730px}
+footer .col-4 {text-align:right; width:350px}
+footer .col-8 p {color:#555555; font-size:0.875em; margin-top:70px}
+footer .col-4 img {margin-top:38px}
+
+@media only screen and (max-width: 1024px) {
+	body { font-size: 0.9em; }
+	
+	.navFloat {display: none !important;}
+	.navlogo {float: none; text-align: center;}
+	.navlogo img {display: inline-block; text-align: center;}
+	.container {width:auto}
+	nav {margin: 66px 0 0; width:100%;}
+	nav li {display:block; margin:0; width:auto;}
+	nav a {display: block; max-width: 100%;}
+
+	.seguranca_condut {background:#ffe400 url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/degrade.png') no-repeat left top; min-height:inherit; padding-bottom:40px;}
+	.seguranca {display: inline-block;}
+	.seguranca h2 {margin:44px 0; width:auto;}
+	.seguranca p {width:auto;}
+	.seguranca ul {float:none; margin:0 0 0 185px; width:auto;}
+
+	.ipad {display:inline-block; float: left; margin-top:45px;}
+
+	.condutores {float:none; margin:44px 0 0; width:auto}
+	.condutores h2 {font-size:3.875em; margin:0 0 44px 0; width:auto;}
+	.condutores p {width:auto;}
+
+	.mapa {background-color:#8bc9de; background-position:center bottom; min-height:1029px; padding-top:44px}
+	.mapa h2 {font-size:4.063em; margin:0 0 30px 0}
+	.mapa .div {display:none;}
+	.mapa p {margin:0; width:auto;}
+
+	.ovlt {background:#ffe400; min-height:inherit; padding-bottom:40px;}
+	.ovlt h2 {margin-top:44px}
+	.ovlt p {margin:28px 0 0; width:auto;}
+	.ovlt .vagoes {display:none}
+
+	.infos {display:none; min-height: initial; padding:44px 0}
+	.infos .item-1,
+	.infos .item-2,
+	.infos .item-3,
+	.infos .item-4,
+	.infos .item-5 {float: left; min-height:115px; width: 192px;}
+
+	.faleconosco {padding:44px 0}
+	.faleconosco .container {overflow:hidden;}
+	.faleconosco .col-2 {float:none; width:auto;}
+	.faleconosco .col-2 h4 {font-size:4.563em; margin:0 0 22px 0; text-align:left;}
+
+	footer {margin-bottom:40px; min-height:inherit;}
+	footer .col-8,
+	footer .col-4 {float:none; text-align:center; width:auto;}
+
+	footer .col-8 p {margin-top:44px;}
+	footer .col-4 img {margin: 38px auto 0;}
+}
+
+@media only screen and (max-width: 768px) {
+	body { font-size: 0.9em; }
+	.container {width:auto}
+	.navFloat {display: none !important;}
+	.navlogo {float: none; text-align: center;}
+	.navlogo img {display: inline-block; text-align: center;}
+	
+	nav {margin: 66px 0 0; width:100%;}
+	nav li {display:block; margin:0; width:auto;}
+	nav a {display: block; max-width: 100%;}
+
+	.seguranca_condut {background:#ffe400 url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/degrade.png') no-repeat left top; min-height:inherit; padding-bottom:40px;}
+	.seguranca {display: inline-block;}
+	.seguranca h2 {margin:44px 0; width:auto;}
+	.seguranca p {width:auto;}
+	.seguranca ul {width:auto;}
+
+	.ipad {display:inline-block;}
+
+	.condutores {float:none; margin:44px 0 0; width:auto}
+	.condutores h2 {font-size:3.875em; margin:0 0 44px 0; width:auto;}
+	.condutores p {width:auto;}
+
+	.mapa {background-color:#8bc9de; background-position:center bottom; min-height:1029px; padding-top:44px}
+	.mapa h2 {font-size:4.063em; margin:0 0 30px 0}
+	.mapa .div {display:none;}
+	.mapa p {margin:0; width:auto;}
+
+	.ovlt {background:#ffe400; min-height:inherit; padding-bottom:40px;}
+	.ovlt h2 {margin-top:44px}
+	.ovlt p {margin:28px 0 0; width:auto;}
+	.ovlt .vagoes {display:none}
+
+	.infos {display:none; padding:44px 0}
+	.infos .item-1,
+	.infos .item-2,
+	.infos .item-3,
+	.infos .item-4,
+	.infos .item-5 {float: left; min-height:115px; width: 202px;}
+
+	.faleconosco {padding:44px 0}
+	.faleconosco .container {overflow:hidden;}
+	.faleconosco .col-2 {float:none; width:auto;}
+	.faleconosco .col-2 h4 {font-size:4.563em; margin:0 0 22px 0; text-align:left;}
+
+	footer {margin-bottom:40px; min-height:inherit;}
+	footer .col-8,
+	footer .col-4 {float:none; text-align:center; width:auto;}
+
+	footer .col-8 p {margin-top:44px;}
+	footer .col-4 img {margin: 38px auto 0;}
+}
+
+/* PAISAGEM */
+@media only screen and (max-width: 667px) {
+	body { font-size: 0.9em; }
+	.container {width:auto}
+	.navFloat {display: none !important;}
+	.navlogo {float: none; text-align: center;}
+	.navlogo img {display: inline-block; text-align: center;}
+	
+	nav {margin: 66px 0 0; width:100%;}
+	nav li {display:block; margin:0; width:auto;}
+	nav a {display: block; max-width: 100%;}
+
+	.seguranca_condut {background:#ffe400 url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/degrade.png') no-repeat left top; min-height:inherit; padding-bottom:40px;}
+	.seguranca {display: inline-block;}
+	.seguranca h2 {margin:44px 0; width:auto;}
+	.seguranca p {width:auto;}
+	.seguranca ul {margin:inherit; width:auto;}
+	.seguranca ul .bullet {background-color: white; border:3px solid; border-radius:20px; display:inline-block; height:25px; margin-right:5px; text-align: center; width:25px;}
+
+	.condutores {float:none; margin:44px 0 0; width:auto}
+	.condutores h2 {font-size:3.875em; margin:0 0 44px 0; width:auto;}
+	.condutores p {width:auto;}
+
+	.ipad {display:none;}
+
+	.mapa {background-color:#8bc9de; background-position:center bottom; min-height:1029px; padding-top:44px}
+	.mapa h2 {font-size:4.063em; margin:0 0 30px 0}
+	.mapa .div {display:none;}
+	.mapa p {margin:0; width:auto;}
+
+	.ovlt {background:#ffe400; min-height:inherit; padding-bottom:40px;}
+	.ovlt h2 {margin-top:44px}
+	.ovlt p {margin:28px 0 0; width:auto;}
+	.ovlt .vagoes {display:none}
+
+	.infos {display:none; padding:44px 0}
+	.infos .item-1,
+	.infos .item-2,
+	.infos .item-3,
+	.infos .item-4,
+	.infos .item-5 {float: left; min-height:115px; width: 202px;}
+
+	.faleconosco {padding:44px 0}
+	.faleconosco .container {overflow:hidden;}
+	.faleconosco .col-2 {float:none; width:auto;}
+	.faleconosco .col-2 h4 {font-size:4.563em; margin:0 0 22px 0; text-align:left;}
+
+	footer {margin-bottom:40px; min-height:inherit;}
+	footer .col-8,
+	footer .col-4 {float:none; text-align:center; width:auto;}
+
+	footer .col-8 p {margin-top:44px;}
+	footer .col-4 img {margin: 38px auto 0;}
+}
+
+@media only screen and (max-width: 568px) {
+	body { font-size: 0.9em; }
+	.container {width:auto}
+	.navFloat {display: none !important;}
+	.navlogo {float: none; text-align: center;}
+	.navlogo img {display: inline-block; text-align: center;}
+	
+	nav {margin: 66px 0 0; width:100%;}
+	nav li {display:block; margin:0; width:auto;}
+	nav a {display: block; max-width: 100%;}
+
+	.seguranca_condut {background:#ffe400 url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/degrade.png') no-repeat left top; min-height:inherit; padding-bottom:40px;}
+	.seguranca {display: inline-block;}
+	.seguranca h2 {margin:44px 0; width:auto;}
+	.seguranca p {width:auto;}
+	.seguranca ul {margin:inherit; width:auto;}
+	.seguranca ul .bullet {background-color: white; border:3px solid; border-radius:20px; display:inline-block; height:25px; margin-right:5px; text-align: center; width:25px;}
+
+	.condutores {float:none; margin:44px 0 0; width:auto}
+	.condutores h2 {font-size:3.875em; margin:0 0 44px 0; width:auto;}
+	.condutores p {width:auto;}
+
+	.mapa {background-color:#8bc9de; background-position:center bottom; min-height:1029px; padding-top:44px}
+	.mapa h2 {font-size:4.063em; margin:0 0 30px 0}
+	.mapa .div {display:none;}
+	.mapa p {margin:0; width:auto;}
+
+	.ovlt {background:#ffe400; min-height:inherit; padding-bottom:40px;}
+	.ovlt h2 {margin-top:44px}
+	.ovlt p {margin:28px 0 0; width:auto;}
+	.ovlt .vagoes {display:none}
+
+	.infos {display:none; padding:44px 0}
+	.infos .item-1,
+	.infos .item-2,
+	.infos .item-3,
+	.infos .item-4,
+	.infos .item-5 {float: left; min-height:115px;}
+
+	.faleconosco {padding:44px 0}
+	.faleconosco .container {overflow:hidden;}
+	.faleconosco .col-2 {float:none; width:auto;}
+	.faleconosco .col-2 h4 {font-size:4.563em; margin:0 0 22px 0; text-align:left;}
+
+	footer {margin-bottom:40px; min-height:inherit;}
+	footer .col-8,
+	footer .col-4 {float:none; text-align:center; width:auto;}
+
+	footer .col-8 p {margin-top:44px;}
+	footer .col-4 img {margin: 38px auto 0;}
+}
+
+/* RETRATO */
+@media only screen and (max-width: 480px) {
+
+	body { font-size: 0.9em; }
+	.navFloat {display: none !important;}
+	nav {margin: 66px 0 0; width:100%;}
+	nav li {display:block; margin:0; width:auto;}
+	.container {width:auto}
+	.seguranca_condut {background:#ffe400 url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/degrade.png') no-repeat left top;}
+	.seguranca {display: inline-block;}
+	.seguranca h2 {margin:44px 0; width:auto;}
+	.seguranca p {width:auto;}
+	.seguranca ul {margin:inherit; width:auto;}
+	.seguranca ul .bullet {background-color: white; border:3px solid; border-radius:20px; display:inline-block; height:25px; margin-right:5px; text-align: center; width:25px;}
+
+	.condutores {float:none; margin:44px 0 0; width:auto}
+	.condutores h2 {font-size:3.875em; margin:0 0 44px 0; width:auto;}
+	.condutores p {width:auto;}
+
+	.mapa {padding-top:44px}
+	.mapa h2 {font-size:4.063em; margin:0 0 30px 0}
+	.mapa .div {display:none;}
+	.mapa p {margin:0; width:auto;}
+
+	.ovlt {background:#ffe400; padding-bottom:44px;}
+	.ovlt h2 {margin-top:44px}
+	.ovlt p {margin:28px 0 0; width:auto;}
+	.ovlt .vagoes {display:none}
+
+	.infos {display:none; padding:44px 0}
+	.infos .item-1,
+	.infos .item-2,
+	.infos .item-3,
+	.infos .item-4,
+	.infos .item-5 {margin:0 auto 30px; width:100%;}
+
+	.faleconosco {padding:44px 0}
+	.faleconosco .container {overflow:hidden;}
+	.faleconosco .col-2 {width:auto;}
+	.faleconosco .col-2 h4 {font-size:4.563em; margin:0 0 22px 0; text-align:left;}
+
+	footer {margin-bottom:40px;}
+	footer .col-8,
+	footer .col-4 {float:none; text-align:center; width:auto;}
+
+	footer .col-8 p {margin-top:44px;}
+
+}
+
+@media only screen and (max-width: 375px) {
+
+	body { font-size: 1em; }
+	.navFloat {display: none !important;}
+	.container {width:auto}
+	.mapa {background-color:#8bc9de; background-position:center bottom; min-height:1240px; padding-top:44px}
+	
+}
+
+@media only screen and (max-width: 320px) {
+
+	body { font-size: 1em; }
+	.navFloat {display: none !important;}
+	.container {width:auto}
+	.seguranca_condut {padding-bottom:40px;}
+	.seguranca {display: inline-block;}
+	.seguranca h2 {font-size:3.250em}
+	.seguranca ul {margin:inherit; width:auto;}
+	.seguranca ul .bullet {background-color: white; border:3px solid; border-radius:20px; display:inline-block; height:25px; margin-right:5px; text-align: center; width:25px;}
+	.condutores h2 {font-size:2.938em;}
+	.mapa {background-color:#8bc9de; background-position:center bottom; min-height:1365px; padding-top:44px}
+	.mapa h2 {font-size:3.750em}
+	.faleconosco .col-2 h4 {font-size:3.563em;}
+	footer {margin-bottom: 40px;}
+}
+
+
+.modal{
+    background: #FFF;
+    position: fixed;
+    padding: 20px 25px;
+    text-align: center;
+    left: 50%;
+    top: 20%;
+
+    z-index: 9999999;
+}
+
+@media(min-width: 320px){
+    .modal{
+        background: #FFF;
+        position: fixed;
+        padding: 20px 10px;
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        width: 300px;
+        margin-left: -150px;
+        margin-top: -160px;
+        z-index: 9999999;
+    }
+
+    .closemodal{position: absolute;right: 5px;top: -81px;cursor: pointer;}
+}
+
+@media(min-width: 768px){
+    .modal{
+        background: #FFF;
+        position: fixed;
+        padding: 20px 25px;
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        width: auto;
+        margin-left: -290px;
+        margin-top: -300px;
+        z-index: 9999999;
+    }
+
+    .closemodal{position: absolute;right: 5px;top: -81px;cursor: pointer;}
+}
+
+@media(min-width: 1024px){
+    .modal{
+        background: #FFF;
+        position: fixed;
+        padding: 20px 25px;
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        width: auto;
+        margin-left: -190px;
+        margin-top: -110px;
+        z-index: 9999999;
+    }
+
+    .closemodal{position: absolute;right: 5px;top: -81px;cursor: pointer;}
+}
+
+@media(min-width: 1200px){
+    .modal{
+        background: #FFF;
+        position: fixed;
+        padding: 20px 25px;
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        width: auto;
+		margin-left: -280px;
+		margin-top: -245px;
+        z-index: 9999999;
+    }
+
+    .closemodal{position: absolute;right: 5px;top: -81px;cursor: pointer;}
+}
+
+.modal h3{ font-weight: 900; text-transform: uppercase; font-family: 'arial-rounded'; }
+
+.modal img{ margin: 15px auto; }
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999999;
+}
+.closemodal{position: absolute;right: -5px;top: -81px;cursor: pointer;}
+.is-interna .overlay, .is-interna .cosemodal{ display: none; }

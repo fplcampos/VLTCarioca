@@ -1,0 +1,283 @@
+/*  html5doctor.com Reset Stylesheet v1.6.1 Last Updated: 2010-09-17 Author: Richard Clark - http://richclarkdesign.com  Twitter: @rich_clark */  html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure,  footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent; }  body { line-height:1; }  article,aside,details,figcaption,figure, footer,header,hgroup,menu,nav,section {  display:block; }  nav ul { list-style:none; }  blockquote, q { quotes:none; }  blockquote:before, blockquote:after, q:before, q:after { content:''; content:none; }  a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }  /* change colours to suit your needs */ ins { background-color:#ff9; color:#000; text-decoration:none; }  /* change colours to suit your needs */ mark { background-color:#ff9; color:#000;  font-style:italic; font-weight:bold; }  del { text-decoration: line-through; }  abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }  table { border-collapse:collapse; border-spacing:0; }  /* change border colour to suit your needs */ hr { display:block; height:1px; border:0;  border-top:1px solid #cccccc; margin:1em 0; padding:0; }  input, select { vertical-align:middle; }
+@font-face {
+	font-family: 'Myriad Pro Regular';
+	src: url('../fonts/MyriadPro-Regular.eot');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Myriad Pro Regular';
+	src: url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+		url('../fonts/MyriadPro-Regular.woff') format('woff'),
+		url('../fonts/MyriadPro-Regular.ttf') format('truetype'),
+		url('../fonts/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Myriad Pro Bold';
+	src: url('../fonts/MyriadPro-Bold.eot');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Myriad Pro Bold';
+	src: url('../fonts/MyriadPro-Bold.woff2') format('woff2'),
+		url('../fonts/MyriadPro-Bold.woff') format('woff'),
+		url('../fonts/MyriadPro-Bold.ttf') format('truetype'),
+		url('../fonts/MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+/**
+*
+* GERAIS
+*
+*/
+body {font-family: 'Myriad Pro Regular'; max-width:100%; width:auto}
+a {text-decoration:none;}
+.left {float:left;}
+.right {float:right;}
+.clear {clear:both;}
+img,
+embed,
+object,
+video {
+    max-width: 100%;
+}
+
+/**
+*
+* CONTAINER
+*
+*/
+.container {margin:0 auto; padding:0 30px; position:relative; width:auto}
+
+/**
+*
+* HEADER
+*
+*/
+header {overflow:hidden;}
+header .navlogo {display:block; margin-top:26px;}
+
+/**
+*
+* NAV
+*
+*/
+nav {margin:66px 0 0 262px;}
+nav a {color:#1d1d1b; font-size:16px; font-weight:600; text-transform:uppercase;}
+nav li.active {background-color:#ffda00; border-radius:10px;}
+nav li {display:inline-block; margin-right:18px; padding:8px; text-align:center; width:107px;}
+nav li:last-child {margin-right:0}
+
+/**
+*
+* SEGURANÇA
+*
+*/
+.seguranca_condut {background:#ffe400; margin-top:47px; min-height:1410px; position:relative;}
+.seguranca_condut .container {min-height:1410px}
+.seguranca_condut img.vlt {position:absolute; right:40px; top:-34px;}
+.seguranca_condut img.degrade {position:absolute; top:0;}
+.seguranca_condut img.condutor {position:absolute; bottom:0;}
+.seguranca_condut img.tracado {bottom:0; position:absolute; right:0;}
+.condutores {width:635px;}
+.seguranca h2,
+.condutores h2 {display:inline-block; font-family:'Myriad Pro Bold'; font-size:70px; letter-spacing:-4px; margin:100px 0 72px; text-transform:uppercase; width:475px;}
+.seguranca p,
+.condutores p {font-size:16px; line-height:26px; margin-bottom:40px; width:818px}
+.condutores p {width:100%;}
+
+/**
+*
+* MAPA
+*
+*/
+.mapa {background:url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/mapa.jpg') no-repeat center top; min-height:990px; overflow:hidden;}
+.mapa h2 {display:inline-block; font-family:'Myriad Pro Bold'; font-size:70px; letter-spacing:-4px; margin:119px 33px 0 156px; text-transform:uppercase;}
+.mapa .div {border-left:1px solid #2b9cc3; float:left; height:143px; margin:111px 30px 0 0; width:1px;}
+.mapa p {font-size:16px; line-height:26px; margin:111px 0 40px; width:445px;}
+
+/**
+*
+* O VLT
+*
+*/
+.ovlt {background:url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/ovlt.jpg') no-repeat center top; min-height:519px; position:relative;}
+.ovlt h2 {color:#1d1d1b; display:inline-block; font-family:'Myriad Pro Bold'; font-size:80px; letter-spacing:-4px; margin:82px 0 0; text-transform:uppercase;}
+.ovlt h3 {color:#535353; display:block; font-family:'Myriad Pro Bold'; font-size:40px; letter-spacing:-2px; text-transform:uppercase;}
+.ovlt .vagoes {background:url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/ovlt_vagoes.png') no-repeat center top; bottom:-116px; height:486px; position:absolute; right:46px; width:516px;}
+.ovlt p {font-size:16px; line-height:26px; margin:73px 0 0; width:526px;}
+
+/**
+*
+* INFOS
+*
+*/
+.infos {min-height:310px; padding-top:86px;}
+.infos ul {list-style-type:none;}
+.infos li {float:left; text-align:center;}
+.infos li.item-1 {background:url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/sprite.png') no-repeat 49px 0; margin-right:63px; padding-top:100px; width:193px;}
+.infos li.item-2 {background:url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/sprite.png') no-repeat -207px 0; margin-right:63px; padding-top:100px; width:168px;}
+.infos li.item-3 {background:url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/sprite.png') no-repeat -434px 0; margin-right:62px; padding-top:100px; width:150px;}
+.infos li.item-4 {background:url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/sprite.png') no-repeat -677px 0; margin-right:63px; padding-top:100px; width:130px;}
+.infos li.item-5 {background:url('https://s3-sa-east-1.amazonaws.com/fsb-digital/vlt_rio/assets/images/sprite.png') no-repeat -877px 0; padding-top:100px; width:189px;}
+.infos li p {color:#1765c3; font-size:17px; text-transform:uppercase;}
+.infos li small {color:#1765c3; font-size:13px;}
+.infos li .dest-1 {color:#ffd800; font-size:69px; font-weight:600; letter-spacing:-4px; text-transform:none;}
+.infos li span {font-size:42px;}
+.infos li .dest-2 {color:#ffd800; font-size:52px; font-weight:600; letter-spacing:-4px; text-transform:none;}
+
+/**
+*
+* FALE CONOSCO
+*
+*/
+.faleconosco {background:#555; min-height:300px; padding-top:110px;}
+.faleconosco .col-2 {width:540px}
+.faleconosco .txt-right {text-align:right;}
+.faleconosco .col-2 h4 {color:#ffffff; font-family:'Myriad Pro Bold'; font-size:80px; font-weight:600; margin-right:32px; text-transform:uppercase;}
+.faleconosco .col-2 h5 {color:#ffcc00; font-size:16px; margin-bottom:32px}
+.faleconosco .col-2 p.div {margin-bottom:32px}
+.faleconosco .col-2 p {color:#ffffff; line-height:22px;}
+.faleconosco .col-2 strong {color:#ffffff}
+.faleconosco .col-2 a {color:#ffcc00; text-decoration:underline;}
+
+/**
+*
+* FOOTER
+*
+*/
+footer {min-height:163px;}
+footer .col-8 {width:730px}
+footer .col-4 {text-align:right; width:350px}
+footer .col-8 p {color:#555555; font-size:14px; margin-top:70px}
+footer .col-4 img {margin-top:38px}
+
+
+/*@media only screen and (max-width: 500px) {
+	nav {margin:66px 0 0 0;}
+}
+
+@media only screen and (max-width: 1024px) {
+
+	nav {margin:66px 0 0 105px;}
+
+	.seguranca p {width:786px}
+
+	.mapa h2 {margin:119px 33px 0 62px; }
+
+	.ovlt p {margin:27px 0 0; width:424px;}
+
+	.infos li.item-1 {margin-right:46px; width:173px;}
+	.infos li.item-2 {margin-right:46px; width:151px;}
+	.infos li.item-3 {background-position:-444px top; margin-right:46px; width:127px;}
+	.infos li.item-4 {margin-right:45px; width:130px;}
+	.infos li p {font-size:14px}
+	.infos li .dest-1 {font-size:64px;}
+
+	.faleconosco .col-2 {width:476px}
+
+	footer .col-8 {width: 603px;}
+}*/
+
+.modal{
+    background: #FFF;
+    position: fixed;
+    padding: 20px 25px;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    margin-left: -185px;
+    margin-top: -130px;
+    z-index: 9999999;
+}
+
+@media(min-width: 320px){
+    .modal{
+        background: #FFF;
+        position: fixed;
+        padding: 20px 10px;
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        width: 300px;
+        margin-left: -150px;
+        margin-top: -160px;
+        z-index: 9999999;
+    }
+
+    .closemodal{position: absolute;right: 5px;top: -81px;cursor: pointer;}
+}
+
+@media(min-width: 768px){
+    .modal{
+        background: #FFF;
+        position: fixed;
+        padding: 20px 25px;
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        width: auto;
+        margin-left: -290px;
+        margin-top: -300px;
+        z-index: 9999999;
+    }
+
+    .closemodal{position: absolute;right: 5px;top: -81px;cursor: pointer;}
+}
+
+@media(min-width: 1024px){
+    .modal{
+        background: #FFF;
+        position: fixed;
+        padding: 20px 25px;
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        width: auto;
+        margin-left: -190px;
+        margin-top: -110px;
+        z-index: 9999999;
+    }
+
+    .closemodal{position: absolute;right: 5px;top: -81px;cursor: pointer;}
+}
+
+@media(min-width: 1200px){
+    .modal{
+        background: #FFF;
+        position: fixed;
+        padding: 20px 25px;
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        width: auto;
+        margin-left: -190px;
+        margin-top: -110px;
+        z-index: 9999999;
+    }
+
+    .closemodal{position: absolute;right: 5px;top: -81px;cursor: pointer;}
+}
+
+.modal h3{ font-weight: 900; text-transform: uppercase; font-family: 'arial-rounded'; }
+
+.modal img{ margin: 15px auto; }
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9999999;
+}
+.closemodal{position: absolute;right: -5px;top: -81px;cursor: pointer;}
+.is-interna .overlay, .is-interna .cosemodal{ display: none; }
